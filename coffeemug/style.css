@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 20px;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    /* perspective: 20px; */
+}
+
+.background ,.foreground{
+    position: absolute;
+     width: 100%; 
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.background{
+    transform: translateZ(-50px) scale(5);
+    /* transform: translateZ(-50px) ; */
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+h1{
+    position: absolute;
+    top: 8rem;
+    font-family: 'Carlito', sans-serif;
+    /* left: 50%; */
+    text-transform: uppercase;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    transform: translateX(-8%);
+    /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+    text-shadow: 1px 1px 2px black;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    padding: 5rem 0 ;
+    color: white;
+}
+.Secheading{
+    font-size: 5rem;
+    padding:0 10rem;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.heading{
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px;
+}
+
+.bg1{
+    background-image: url(OIP.jpg);
+}
+.bg2{
+    background-image: url(oip2.jpg);
+}
+.bg3{
+    background-color: url(oip3.jpg);
+}
